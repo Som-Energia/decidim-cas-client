@@ -2,5 +2,5 @@
 en:
   decidim:
     features:
-      cas-client:
+      cas_client:
         name: CasClient

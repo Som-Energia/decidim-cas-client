@@ -12,7 +12,7 @@ Space.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'decidim-cas-client
+gem 'decidim-cas_client
 ```
 
 And then execute:

@@ -9,6 +9,8 @@ module Decidim
     class Engine < ::Rails::Engine
       isolate_namespace Decidim::CasClient
 
+      require "devise_cas_authenticatable"
+
       routes do
         # Add engine routes here
         # resources :decidim-cas-client
@@ -24,6 +26,7 @@ module Decidim
       #     config.abilities += ["Decidim::CasClient::Abilities::CurrentUserAbility"]
       #   end
       # end
+
     end
   end
 end

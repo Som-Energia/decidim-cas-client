@@ -5,7 +5,7 @@ source "https://rubygems.org"
 ruby RUBY_VERSION
 
 gem "decidim", git: "https://github.com/decidim/decidim"
-gem "decidim-decidim-cas-client", path: "."
+gem "decidim-cas_client", path: "."
 
 gem "puma", "~> 3.0"
 gem "uglifier", "~> 4.1"
