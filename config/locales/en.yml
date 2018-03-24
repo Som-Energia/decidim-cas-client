@@ -1,6 +1,13 @@
 ---
 en:
   decidim:
-    features:
-      cas_client:
-        name: CasClient
+    authorization_handlers:
+      cas_som_energia:
+        explanation: Perform login with CAS
+        name: SomEnergia CAS verification
+    cas_client:
+      authorizations:
+        new:
+          back: "&larr; Back"
+          do_login: To verify yourself, you must login to the plaform with CAS access
+          title: Verify with CAS

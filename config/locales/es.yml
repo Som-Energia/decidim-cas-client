@@ -1,0 +1,13 @@
+---
+es:
+  decidim:
+    authorization_handlers:
+      cas_som_energia:
+        explanation: Haga login mediante CAS
+        name: Verificación CAS de SomEnergia
+    cas_client:
+      authorizations:
+        new:
+          back: "&larr; Atrás"
+          do_login: Para verificarse debe acceder a la plataforma mediante CAS
+          title: Verifiquese con CAS

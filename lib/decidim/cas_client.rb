@@ -3,6 +3,7 @@
 require "decidim/cas_client/admin"
 require "decidim/cas_client/engine"
 require "decidim/cas_client/admin_engine"
+require "decidim/cas_client/workflow"
 
 module Decidim
   # This namespace holds the logic of the `CasClient` component. This component
