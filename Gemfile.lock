@@ -1,5 +1,6 @@
-PATH
-  remote: ../devise-cas-authenticable
+GIT
+  remote: git@gitlab.coditdev.net:decidim/codit-devise-cas-authenticable.git
+  revision: 7e58aae714b36e7c20f36f6349aba82c11289904
   specs:
     codit-devise-cas-authenticable (0.0.1)
       devise (>= 1.2.0)
