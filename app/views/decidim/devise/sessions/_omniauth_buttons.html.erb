@@ -3,7 +3,7 @@
     <div class="social-register">
       <%= link_to new_user_cas_session_path, class: "button button--social button--#{normalize_provider_name(provider)}" do %>
         <span class="button--social__icon">
-          <%= image_tag asset_path("/assets/decidim/cas_client/somenergia-icon.png"), class: "icon" %>
+          <%= image_tag "decidim/cas_client/somenergia-icon.png", class: "icon" %>
         </span>
         <%= t("devise.shared.links.sign_in_with_provider", provider: normalize_provider_name(provider).titleize) %>
       <% end %>
