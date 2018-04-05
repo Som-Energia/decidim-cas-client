@@ -21,6 +21,15 @@ And then execute:
 bundle
 ```
 
+## Database modifications
+
+For the correct use of this CAS client, there is a migration that modifies the database in these ways:
+
+- Added `username` (`STRING`) field
+- Added `extra_attributes` (`JSONB`) field
+- Added index for `username` field
+- Modified index for `email` and `organization_id` to not be unique
+
 ## Contributing
 
 See [Decidim](https://github.com/decidim/decidim).
