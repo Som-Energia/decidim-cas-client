@@ -1,17 +1,10 @@
 GIT
   remote: git@gitlab.coditdev.net:decidim/codit-devise-cas-authenticable.git
-  revision: 7e58aae714b36e7c20f36f6349aba82c11289904
+  revision: f8930b9bbc99746e30a63fa7a13fecc03737a30f
   specs:
-    codit-devise-cas-authenticable (0.0.1)
+    codit-devise-cas-authenticable (0.0.2)
       devise (>= 1.2.0)
       rubycas-client (>= 2.2.1)
-
-PATH
-  remote: .
-  specs:
-    decidim-cas_client (0.0.2)
-      decidim-core (~> 0.10.0)
-      decidim-verifications (~> 0.10.0)
 
 GEM
   remote: https://rubygems.org/
