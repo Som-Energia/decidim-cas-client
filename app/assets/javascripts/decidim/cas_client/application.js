@@ -9,8 +9,5 @@ function bindCasClientRoutes(){
     e.preventDefault();
     window.location.href = '/users/cas/sign_in?locale='+locale;
   });
-  $(document).on("click","a[href*='/users/sign_out']", function(e){
-    e.preventDefault();
-    window.location.href = '/users/cas/sign_out?locale='+locale;
-  });
+  $("a[href*='/users/sign_out']").attr('href', '/users/cas/sign_out?locale='+locale);
 }
