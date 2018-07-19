@@ -18,9 +18,9 @@ Gem::Specification.new do |s|
 
   s.files = Dir["{app,config,lib}/**/*", "LICENSE-AGPLv3.txt", "Rakefile", "README.md"]
 
-  s.add_dependency "decidim-core", "~> 0.12.0"
-  s.add_dependency "decidim-verifications", "~> 0.12.0"
+  s.add_dependency "decidim-core", "~> 0.13.0"
+  s.add_dependency "decidim-verifications", "~> 0.13.0"
 
   s.add_development_dependency "codit-devise-cas-authenticable", "~> 0.0.2"
-  s.add_development_dependency "decidim-dev", "~> 0.12.0"
+  s.add_development_dependency "decidim-dev", "~> 0.13.0"
 end
