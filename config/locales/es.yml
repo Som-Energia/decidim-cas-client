@@ -11,3 +11,8 @@ es:
           back: "&larr; Atrás"
           do_login: Para verificarse debe acceder a la plataforma mediante CAS
           title: Verifiquese con CAS
+    verifications:
+      authorizations:
+        first_login:
+          actions:
+            cas_som_energia: Verifícate accediendo a la plataforma mediante CAS

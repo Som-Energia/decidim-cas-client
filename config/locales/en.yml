@@ -11,3 +11,8 @@ en:
           back: "&larr; Back"
           do_login: To verify yourself, you must login to the plaform with CAS access
           title: Verify with CAS
+    verifications:
+      authorizations:
+        first_login:
+          actions:
+            cas_som_energia: Get verified by login to the platform with CAS access

@@ -11,3 +11,8 @@ ca:
           back: "&larr; Enrera"
           do_login: Per a verificar-se cal accedir a la plataforma mitjançant l'accés de CAS
           title: Verifiqueu-vos amb CAS
+      verifications:
+        authorizations:
+          first_login:
+            actions:
+              cas_som_energia: Verifica't accedint a la plataforma mitjançant CAS
