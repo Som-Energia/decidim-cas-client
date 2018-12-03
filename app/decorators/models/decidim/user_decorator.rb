@@ -14,6 +14,10 @@ Decidim::User.class_eval do
     authorization.grant!
   end
 
+  def grant_authorization
+    after_confirmation
+  end
+
   def cas_extra_attributes=(extra_attributes)
     self.extra_attributes ||= {}
     extra_attributes.each do |name, value|

@@ -9,7 +9,7 @@ GIT
 PATH
   remote: .
   specs:
-    decidim-cas_client (0.0.11)
+    decidim-cas_client (0.0.16)
       decidim-core (~> 0.14.1)
       decidim-verifications (~> 0.14.1)
 
