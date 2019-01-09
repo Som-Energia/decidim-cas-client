@@ -4,7 +4,7 @@ module Decidim
   # This holds the decidim-meetings version.
   module CasClient
     def self.version
-      "0.0.16"
+      "0.0.17"
     end
   end
 end
