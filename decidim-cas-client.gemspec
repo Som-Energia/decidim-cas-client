@@ -5,6 +5,7 @@ $LOAD_PATH.push File.expand_path("lib", __dir__)
 require "decidim/cas_client/version"
 
 Gem::Specification.new do |s|
+  DECIDIM_VERSION = "~> 0.16.0"
   s.version = Decidim::CasClient.version
   s.authors = ["Marc Reniu", "Isaac Massot"]
   s.email = ["marc.rs@coditramuntana.com", "isaac.mg@coditramuntana.com"]
@@ -18,9 +19,9 @@ Gem::Specification.new do |s|
 
   s.files = Dir["{app,config,lib}/**/*", "LICENSE-AGPLv3.txt", "Rakefile", "README.md"]
 
-  s.add_dependency "decidim-core", "~> 0.15.1"
-  s.add_dependency "decidim-verifications", "~> 0.15.1"
+  s.add_dependency "decidim-core", DECIDIM_VERSION
+  s.add_dependency "decidim-verifications", DECIDIM_VERSION
 
-  s.add_development_dependency "codit-devise-cas-authenticable", "~> 0.0.2"
-  s.add_development_dependency "decidim-dev", "~> 0.15.1"
+  s.add_development_dependency "codit-devise-cas-authenticable", DECIDIM_VERSION
+  s.add_development_dependency "decidim-dev", DECIDIM_VERSION
 end
