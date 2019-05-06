@@ -9,9 +9,9 @@ GIT
 PATH
   remote: .
   specs:
-    decidim-cas_client (0.0.18)
-      decidim-core (~> 0.16.0)
-      decidim-verifications (~> 0.16.0)
+    decidim-cas_client (0.0.19)
+      decidim-core (>= 0.16.0)
+      decidim-verifications (>= 0.16.0)
 
 GEM
   remote: https://rubygems.org/
@@ -715,7 +715,7 @@ DEPENDENCIES
   byebug (~> 10.0)
   codit-devise-cas-authenticable!
   decidim-cas_client!
-  decidim-dev (~> 0.16.0)
+  decidim-dev (>= 0.16.0)
   faker (~> 1.8)
   web-console (~> 3.5)
 
@@ -723,4 +723,4 @@ RUBY VERSION
    ruby 2.5.1p57
 
 BUNDLED WITH
-   1.17.1
+   1.17.3
