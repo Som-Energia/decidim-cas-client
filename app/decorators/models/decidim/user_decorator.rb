@@ -46,7 +46,10 @@ Decidim::User.class_eval do
         )
     else
       where(%(extra_attributes @> '{"soci": "#{warden_conditions[:soci]}"}'))
-        .find_by(username: warden_conditions[:username])
+        .find_by(
+          username: warden_conditions[:username],
+          decidim_organization_id: warden_conditions[:decidim_organization_id]
+        )
     end
   end
 
