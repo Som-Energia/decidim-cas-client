@@ -16,3 +16,4 @@ en:
         first_login:
           actions:
             cas_som_energia: Get verified by login to the platform with CAS access
+    login: Sign in with Decidim

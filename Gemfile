@@ -6,7 +6,7 @@ ruby RUBY_VERSION
 
 gemspec
 
-# gem "decidim", "~> 0.10.0"
+gem 'jquery-rails'
 
 group :development, :test do
   gem "byebug", "~> 10.0", platform: :mri

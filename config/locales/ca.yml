@@ -16,3 +16,4 @@ ca:
           first_login:
             actions:
               cas_som_energia: Verifica't accedint a la plataforma mitjançant CAS
+    login: Iniciar sessió amb Decidim
