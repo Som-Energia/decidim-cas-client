@@ -13,7 +13,7 @@
         <span class="register__separator">
           <span class="register__separator__text"><%= I18n.t("decidim.devise.shared.omniauth_buttons.or") %></span>
         </span>
-        <%= button_tag t("decidim.login"), class: "button button-login button--SomEnergia", onclick: "changeVisibilityLoginBox()" %>
+        <%= button_tag t("decidim.login"), class: "button-login", onclick: "changeVisibilityLoginBox()" %>
         <div class="card login__box">
           <div class="card__content">
             <%= decidim_form_for(resource, as: resource_name, url: session_path(resource_name), html: { class: "register-form new_user" }) do |f| %>

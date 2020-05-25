@@ -9,9 +9,21 @@
 
 .button-login {
   text-align: left;
+  text-decoration: none;
+  margin: 0 0 1rem 0;
   display: block;
   color: white;
   width: 100%;
+  font-size: 1.5rem;
+  background-color: #DCDCDC;
+  &:hover { background-color: #A9A9A9; }
+  -webkit-appearance: none;
+  border: 10px solid transparent;
+  cursor: pointer;
+}
+
+.button-login:-moz-focusring {
+  outline: none;
 }
 
 .login__box {
