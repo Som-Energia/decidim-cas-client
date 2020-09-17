@@ -28,6 +28,8 @@ Decidim::User.class_eval do
         self.extra_attributes[:soci] = value
       when :username
         self.extra_attributes[:username] = value
+      when :locale
+        self.locale = value
       end
     end
   end
