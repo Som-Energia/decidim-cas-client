@@ -2,9 +2,18 @@
 .topbar__user__login .sign-up-link { display: none; }
 
 .button--SomEnergia {
+  color: #2c2930 !important;
   background-color: #bac92a;
   font-size: 1.5rem;
   &:hover { background-color: #c0c96b; }
+}
+
+.button--social {
+  position: initial;
+}
+.button--social__icon {
+  display: inline-block;
+  position: initial;
 }
 
 .button-login {
