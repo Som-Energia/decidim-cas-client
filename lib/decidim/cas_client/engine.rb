@@ -15,7 +15,7 @@ module Decidim
 
       routes do
         resource :authorizations, only: [:new], as: :authorization
-        resource :cas_session, only: [:new], path: 'users/cas/sign_in', controller: 'decidim/cas_client/authorizations', as: 'new_user_cas_session'
+        resource :cas_session, only: [:new], path: "users/cas/sign_in", controller: "decidim/cas_client/authorizations", as: "new_user_cas_session"
 
         root to: "authorizations#new"
       end
