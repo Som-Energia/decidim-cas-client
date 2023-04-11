@@ -12,7 +12,7 @@ require_relative "#{base_path}lib/decidim/cas_client/version"
 
 DECIDIM_VERSION = Decidim::CasClient::DECIDIM_VERSION
 
-gem "codit-devise-cas-authenticable", git: "git@github.com:Som-Energia/codit-devise-cas-authenticable.git"
+gem "codit-devise-cas-authenticable", git: "https://github.com/Som-Energia/codit-devise-cas-authenticable.git"
 gem "decidim", DECIDIM_VERSION
 gem "decidim-cas_client", path: "."
 gem "deface"

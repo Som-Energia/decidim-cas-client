@@ -1,5 +1,5 @@
 GIT
-  remote: git@github.com:Som-Energia/codit-devise-cas-authenticable.git
+  remote: https://github.com/Som-Energia/codit-devise-cas-authenticable.git
   revision: 27f87ab349d397224185cae5232dcb30d523d025
   specs:
     codit-devise-cas-authenticable (0.0.6)
