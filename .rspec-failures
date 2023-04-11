@@ -11,5 +11,5 @@ example_id                                                  | status | run_time 
 ./spec/models/user_extensions_spec.rb[1:8:1]                | passed | 0.20537 seconds |
 ./spec/models/user_extensions_spec.rb[1:8:2]                | passed | 0.26309 seconds |
 ./spec/models/user_extensions_spec.rb[1:8:3:1]              | passed | 0.2059 seconds  |
-./spec/system/cas_user_login_spec.rb[1:1]                   | failed | 16.12 seconds   |
-./spec/system/cas_user_login_spec.rb[1:2]                   | passed | 2.47 seconds    |
+./spec/system/cas_user_login_spec.rb[1:1]                   | passed | 5.17 seconds    |
+./spec/system/cas_user_login_spec.rb[1:2]                   | passed | 2.62 seconds    |
