@@ -9,6 +9,7 @@
 
 # rspec failure tracking
 .rspec_status
+.rspec_failures
 
 # default test application
 spec/decidim_dummy_app
