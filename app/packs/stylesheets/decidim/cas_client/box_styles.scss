@@ -1,0 +1,39 @@
+.topbar__user__login .sign-up-link { display: none; }
+
+.button--SomEnergia {
+  color: #2c2930 !important;
+  background-color: #bac92a;
+  font-size: 1.5rem;
+  &:hover { background-color: #c0c96b; }
+}
+
+.button--social {
+  position: initial;
+}
+.button--social__icon {
+  display: inline-block;
+  position: initial;
+}
+
+.button-login {
+  text-align: left;
+  text-decoration: none;
+  margin: 0 0 1rem 0;
+  display: block;
+  color: white;
+  width: 100%;
+  font-size: 1.5rem;
+  background-color: #828282;
+  &:hover { background-color: #A9A9A9; }
+  -webkit-appearance: none;
+  border: 10px solid transparent;
+  cursor: pointer;
+}
+
+.button-login:-moz-focusring {
+  outline: none;
+}
+
+.login__box {
+  display: none;
+}

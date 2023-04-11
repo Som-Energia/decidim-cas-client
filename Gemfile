@@ -4,16 +4,38 @@ source "https://rubygems.org"
 
 ruby RUBY_VERSION
 
-gemspec
+# Inside the development app, the relative require has to be one level up, as
+# the Gemfile is copied to the development_app folder (almost) as is.
+base_path = ""
+base_path = "../" if File.basename(__dir__) == "development_app"
+require_relative "#{base_path}lib/decidim/cas_client/version"
 
-gem 'jquery-rails'
+DECIDIM_VERSION = Decidim::CasClient::DECIDIM_VERSION
+
+gem "codit-devise-cas-authenticable", git: "git@github.com:Som-Energia/codit-devise-cas-authenticable.git"
+gem "decidim", DECIDIM_VERSION
+gem "decidim-cas_client", path: "."
+gem "deface"
+
+gem "bootsnap", "~> 1.7"
+gem "faker", "~> 2.14"
+gem "rspec", "~> 3.0"
 
 group :development, :test do
-  gem "byebug", "~> 10.0", platform: :mri
-  gem "codit-devise-cas-authenticable", git: "git@gitlab.coditdev.net:decidim/codit-devise-cas-authenticable.git"
+  gem "byebug", "~> 11.0", platform: :mri
+
+  gem "decidim-dev", DECIDIM_VERSION
 end
 
 group :development do
-  gem "faker", "~> 1.8"
-  gem "web-console", "~> 3.5"
+  gem "letter_opener_web", "~> 1.3"
+  gem "listen", "~> 3.1"
+  gem "rubocop-faker", "~> 1.1"
+  gem "spring", "~> 2.0"
+  gem "spring-watcher-listen", "~> 2.0"
+  gem "web-console"
+end
+
+group :test do
+  gem "codecov", require: false
 end

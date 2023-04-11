@@ -2,6 +2,7 @@
 
 require "rails"
 require "decidim/core"
+require "deface"
 
 module Decidim
   module CasClient
@@ -13,30 +14,17 @@ module Decidim
       require "decidim/verifications"
 
       routes do
-        resource :authorizations, only: %i[new], as: :authorization
+        resource :authorizations, only: [:new], as: :authorization
 
         root to: "authorizations#new"
       end
 
-      initializer "decidim.assets" do |app|
-        app.config.assets.precompile += %w(decidim_cas_client_manifest.js)
-        app.config.assets.precompile += %w( decidim/cas_client/somenergia-icon.png )
-
-        app.config.assets.debug = true if Rails.env.test?
-      end
-
-      initializer :append_migrations do |app|
-        unless app.root.to_s.match root.to_s
-          config.paths["db/migrate"].expanded.each do |expanded_path|
-            app.config.paths["db/migrate"] << expanded_path
-          end
-        end
-      end
-
       config.to_prepare do
-        Dir.glob(Decidim::CasClient::Engine.root + "app/decorators/**/*_decorator*.rb").each do |c|
-          require_dependency(c)
-        end
+        Decidim::User.include(Decidim::CasClient::UserExtensions)
+      end
+
+      initializer "decidim_cas_client.webpacker.assets_path" do
+        Decidim.register_assets_path File.expand_path("app/packs", root)
       end
     end
   end
