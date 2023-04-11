@@ -23,6 +23,12 @@ module Decidim
         Decidim::User.include(Decidim::CasClient::UserExtensions)
       end
 
+      initializer "decidim_cas_client.controller_overrides", after: "decidim.action_controller" do
+        config.to_prepare do
+          Decidim::Devise::SessionsController.include(Decidim::CasClient::NeedsSignInSnippets)
+        end
+      end
+
       initializer "decidim_cas_client.webpacker.assets_path" do
         Decidim.register_assets_path File.expand_path("app/packs", root)
       end
