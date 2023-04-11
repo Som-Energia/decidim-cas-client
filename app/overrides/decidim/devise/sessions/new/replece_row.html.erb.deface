@@ -1,0 +1,3 @@
+<!-- replace_contents ".row.collapse:first-child" -->
+
+<%= render "decidim/devise/sessions/new" %>

@@ -1,0 +1,3 @@
+<!-- replace_contents ".row" -->
+
+<%= render "decidim/devise/sessions/omniauth_buttons" %>
