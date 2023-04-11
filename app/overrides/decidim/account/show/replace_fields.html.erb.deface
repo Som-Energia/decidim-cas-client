@@ -1,0 +1,3 @@
+<!-- replace_contents ".row" -->
+
+<%= render "decidim/account/show", f: f%>
