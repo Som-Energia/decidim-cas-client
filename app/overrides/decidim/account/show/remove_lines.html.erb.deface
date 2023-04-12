@@ -1,2 +1,0 @@
-<!-- remove "erb[silent]:contains('add_decidim_page_title')" -->
-<!-- remove "erb[silent]:contains('content_for(:subtitle)')" -->
