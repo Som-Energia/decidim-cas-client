@@ -9,9 +9,6 @@ checksums = [
   {
     package: "decidim-core",
     files: {
-      "/app/views/decidim/devise/sessions/new.html.erb" => "1da8569a34bcd014ffb5323c96391837",
-      "/app/views/decidim/devise/shared/_omniauth_buttons.html.erb" => "a456549c8f521b012ec7436d9e7111f4",
-      "/app/views/decidim/shared/_login_modal.html.erb" => "bf583a391dc1cc50fc8261dd850dfcc1",
       "/app/views/decidim/account/show.html.erb" => "db0e241a908e8d72cbd5815a09286e66"
     }
   }
