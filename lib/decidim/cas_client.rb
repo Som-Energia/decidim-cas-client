@@ -1,8 +1,6 @@
 # frozen_string_literal: true
 
-require "decidim/cas_client/admin"
 require "decidim/cas_client/engine"
-require "decidim/cas_client/admin_engine"
 require "decidim/cas_client/workflow"
 
 module Decidim

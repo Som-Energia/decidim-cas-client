@@ -3,8 +3,8 @@
 module Decidim
   # This holds the decidim-meetings version.
   module CasClient
-    def self.version
-      "0.0.20"
-    end
+    VERSION = "0.3.0"
+    DECIDIM_VERSION = "0.26.5"
+    COMPAT_DECIDIM_VERSION = [">= 0.25.0", "< 0.28"].freeze
   end
 end

@@ -9,6 +9,9 @@
 
 # rspec failure tracking
 .rspec_status
+.rspec_failures
+.byebug_history
+.rbenv_vars
 
 # default test application
 spec/decidim_dummy_app
