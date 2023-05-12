@@ -2,7 +2,7 @@
 
 module Decidim
   module CasClient
-    module NeedsSignInSnippets
+    module SessionsControllerAddons
       extend ActiveSupport::Concern
 
       included do

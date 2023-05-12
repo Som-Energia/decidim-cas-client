@@ -15,7 +15,7 @@ module Decidim
 
       routes do
         resource :authorizations, only: [:new], as: :authorization
-        resource :cas_session, only: [:new], path: "users/cas/sign_in", controller: "decidim/cas_client/authorizations", as: "user_cas_session"
+        resource :cas_session, only: [:new], path: "users/cas/sign_in", controller: "/decidim/cas_client/authorizations", as: "user_cas_session"
 
         root to: "authorizations#new"
       end
@@ -26,7 +26,7 @@ module Decidim
 
       initializer "decidim_cas_client.controller_overrides", after: "decidim.action_controller" do
         config.to_prepare do
-          Decidim::Devise::SessionsController.include(Decidim::CasClient::NeedsSignInSnippets)
+          Decidim::Devise::SessionsController.include(Decidim::CasClient::SessionsControllerAddons)
         end
       end
 

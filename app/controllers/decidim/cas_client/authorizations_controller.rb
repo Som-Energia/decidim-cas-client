@@ -5,7 +5,9 @@ module Decidim
     class AuthorizationsController < Decidim::ApplicationController
       skip_before_action :verify_authenticity_token
 
-      def new; end
+      def new
+        redirect_to "/admin" if current_user.present? && !current_user&.cas_user?
+      end
     end
   end
 end
