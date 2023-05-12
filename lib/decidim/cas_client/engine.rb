@@ -26,7 +26,7 @@ module Decidim
 
       initializer "decidim_cas_client.controller_overrides", after: "decidim.action_controller" do
         config.to_prepare do
-          Decidim::Devise::SessionsController.include(Decidim::CasClient::SessionsControllerAddons)
+          Decidim::Devise::SessionsController.include(Decidim::CasClient::LoginSnippets)
         end
       end
 
