@@ -13,9 +13,16 @@ module Decidim
         validations = { email: ActiveRecord::Validations::UniquenessValidator }
         validations.each do |field, validation_type|
           _validators[field]
-            .find_all { |v| v.is_a? validation_type }.each do |validator|
-              validator.instance_variable_set :@options, validator.options.merge({ unless: :cas_user? })
+          .find_all { |v| v.is_a? validation_type }.each do |validator|
+            condition = if validator.options.has_key?(:unless)
+              -> { cas_user? || deleted? || managed? || nickname.blank? }
+            else
+              :cas_user?
             end
+            validator.instance_variable_set :@options, validator.options.merge({ unless: condition })
+            callback = __callbacks[:validate].send(:chain).find {|c| c.filter == validator }
+            callback.instance_variable_set(:@unless, [condition]) if callback
+          end
         end
 
         def after_confirmation
